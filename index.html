@@ -26,8 +26,8 @@
               <tr ng-repeat="entries in listings | filter:searchFilter">
                 <td>{{entries.code}}</td>
                 <td>{{entries.name}}</td>
-                <td> <button ng-click="showDetails($index)">Details</button></td>
-                <td> <button ng-click="deleteListing($index)">Remove</button></td>
+                <td> <button ng-click="showDetails(entries.code)">Details</button></td>
+                <td> <a class="btn" ng-click="deleteListing(entries.code)">Delete</a></td>
               </tr>
             </table>
           </div>

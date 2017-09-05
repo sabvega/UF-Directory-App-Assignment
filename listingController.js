@@ -31,14 +31,19 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       $scope.newLong = "";
       $scope.newAdd = "";
     };
-    $scope.deleteListing = function(index) {
-      $scope.listings.splice(index, 1);
+    $scope.deleteListing = function(code) {
+      var object = $scope.listings.find(entry => {
+        return entry.code == code;
+      });
+      $scope.listings.splice($scope.listings.indexOf(object), 1);
       $scope.show=false;
     };
-    $scope.showDetails = function(index) {
+    $scope.showDetails = function(code) {
        $scope.detailedInfo = 
-        $scope.listings[index];
+        $scope.listings.find(entry => {
+          return entry.code == code;
+        });
       $scope.show = true;
     };
-  }s
+  }
 ]);
