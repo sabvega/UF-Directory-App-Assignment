@@ -5,4 +5,22 @@
 .tableWrapper {
   max-height: 400px;
   overflow: auto;
+  margin-bottom: 20px;
+}
+
+.info {
+  color: gray;
+}
+
+#submit {
+  vertical-align: middle;
+}
+
+.addListing {
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.jumbotron {
+  padding-top: 10px;
 }
