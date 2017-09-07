@@ -6,14 +6,27 @@
   max-height: 400px;
   overflow: auto;
   margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.table {
+  background-color: #eee;
 }
 
 .info {
   color: gray;
 }
 
+#tableRow :hover ,#create:hover{
+  color: #DFB3C1;
+}
+
 #submit {
   vertical-align: middle;
+}
+
+.grow:hover {
+  transform: scale(1.2);
 }
 
 .addListing {
@@ -23,4 +36,20 @@
 
 .jumbotron {
   padding-top: 10px;
+}
+
+body {
+  background-color: #41B3A3;
+  font-family: 'Days One';
+}
+
+
+h2, h3, h4,h5 {
+  color:#E27d60;
+  font-family: 'Bungee Inline';
+}
+
+h1 {
+  color: #E27d60;
+  font-family: 'Bungee Shade';
 }
